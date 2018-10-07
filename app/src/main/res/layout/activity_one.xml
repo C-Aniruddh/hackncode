@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thealphaversion.app.hackncode.one"
+    tools:layout_editor_absoluteY="81dp"
+    fontPath="fonts/SweetGirls.ttf"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/username"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTextView"
+        app:layout_constraintEnd_toStartOf="@+id/usernameText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        fontPath="fonts/SweetGirls.ttf"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        fontPath="fonts/Signatra.ttf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="114dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/password"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/PasswordText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView"
+        tools:ignore="MissingPrefix" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/passwordTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usernameTextView"
+        app:layout_constraintTop_toTopOf="@+id/titleTextView" />
+
+    <EditText
+        android:id="@+id/PasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="118dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passwordTextView"
+        app:layout_constraintTop_toTopOf="@+id/passwordTextView" />
+
+    <Button
+        android:id="@+id/button"
+        fontPath="fonts/Signatra.ttf"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="172dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextView"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        fontPath="fonts/Signatra.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/one_sheep_two_sheep"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/textView4"
+        fontPath="fonts/Signatra.ttf"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="68dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="MissingPrefix" />
+
+</android.support.constraint.ConstraintLayout>
